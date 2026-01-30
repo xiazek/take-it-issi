@@ -1,0 +1,39 @@
+{
+  "subject_mapping": [
+    {
+      "code": "MSI1",
+      "name": "Metody sztucznej inteligencji - metody 'symbolicznej SI'",
+      "lecturers": ["prof. B. Śnieżyński", "mgr inż. M. Jarosz"]
+    },
+    {
+      "code": "MS12",
+      "name": "Metody sztucznej inteligencji - heurystyczne algorytmy optymalizacji globalnej, klasyczne ML, sieci neuronowe, prog. probabilistyczne",
+      "lecturers": ["dr inż. Roman Dębski"]
+    },
+    {
+      "code": "MS13",
+      "name": "Metody sztucznej inteligencji - NLP/LLMs, modele/metody generatywne",
+      "lecturers": ["mgr M. Król"]
+    },
+    {
+      "code": "MS14",
+      "name": "Metody sztucznej inteligencji - wybrane zagadnienia z przetwarzania obrazów",
+      "lecturers": ["dr inż. A. Brodzicki"]
+    },
+    {
+      "code": "ID",
+      "name": "Wybrane zagadnienia z inżynierii danych",
+      "lecturers": ["mgr inż. J. Adamczyk", "mgr inż. J. Nowak"]
+    },
+    {
+      "code": "IPUM",
+      "name": "Inżynieria procesów uczenia maszynowego",
+      "lecturers": ["mgr inż. J. Adamczyk", "mgr inż. J. Nowak"]
+    },
+    {
+      "code": "PD",
+      "name": "Projekt dyplomowy",
+      "lecturers": ["dr inż. Roman Dębski"]
+    }
+  ]
+}

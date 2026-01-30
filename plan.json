@@ -1,0 +1,184 @@
+{
+  "abbreviations": {
+    "MSI1": "Metody sztucznej inteligencji - metody symbolicznej SI",
+    "MS12": "Metody sztucznej inteligencji - heurystyczne algorytmy optymalizacji globalnej, klasyczne ML, sieci neuronowe, prog. probabilistyczne",
+    "MS13": "Metody sztucznej inteligencji - NLP/LLMs, modele/metody generatywne",
+    "MS14": "Metody sztucznej inteligencji - wybrane zagadnienia z przetwarzania obrazów",
+    "ID": "Wybrane zagadnienia z inżynierii danych",
+    "IPUM": "Inżynieria procesów uczenia maszynowego",
+    "PD": "Projekt dyplomowy"
+  },
+  "classes": [
+    {
+      "group": 1,
+      "date": "2026-02-28",
+      "start_time": "2026-02-28T09:00:00+01:00",
+      "end_time": "2026-02-28T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "prof. B. Śnieżyński",
+      "subject": "MSI1"
+    },
+    {
+      "group": 1,
+      "date": "2026-02-28",
+      "start_time": "2026-02-28T12:45:00+01:00",
+      "end_time": "2026-02-28T16:00:00+01:00",
+      "room": "s. 3.27d",
+      "lecturer": "dr inż. R. Dębski",
+      "subject": "MS12"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-01",
+      "start_time": "2026-03-01T09:00:00+01:00",
+      "end_time": "2026-03-01T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "ID"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-01",
+      "start_time": "2026-03-01T12:45:00+01:00",
+      "end_time": "2026-03-01T16:00:00+01:00",
+      "room": "s. 3.27e",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "ID"
+    },
+    {
+      "group": 2,
+      "date": "2026-02-28",
+      "start_time": "2026-02-28T09:00:00+01:00",
+      "end_time": "2026-02-28T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "prof. B. Śnieżyński",
+      "subject": "MSI1"
+    },
+    {
+      "group": 2,
+      "date": "2026-02-28",
+      "start_time": "2026-02-28T12:45:00+01:00",
+      "end_time": "2026-02-28T16:00:00+01:00",
+      "room": "s. 3.27e",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "ID"
+    },
+    {
+      "group": 2,
+      "date": "2026-03-01",
+      "start_time": "2026-03-01T09:00:00+01:00",
+      "end_time": "2026-03-01T12:15:00+01:00",
+      "room": "s. 3.27d",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "ID"
+    },
+    {
+      "group": 2,
+      "date": "2026-03-01",
+      "start_time": "2026-03-01T12:45:00+01:00",
+      "end_time": "2026-03-01T16:00:00+01:00",
+      "room": "s. 3.27d",
+      "lecturer": "dr inż. R. Dębski",
+      "subject": "MS12"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-14",
+      "start_time": "2026-03-14T09:00:00+01:00",
+      "end_time": "2026-03-14T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "dr inż. R. Dębski",
+      "subject": "MS12"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-14",
+      "start_time": "2026-03-14T12:45:00+01:00",
+      "end_time": "2026-03-14T16:00:00+01:00",
+      "room": "s. 3.27d",
+      "lecturer": "dr inż. A. Brodzicki",
+      "subject": "MS14"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-15",
+      "start_time": "2026-03-15T12:45:00+01:00",
+      "end_time": "2026-03-15T16:00:00+01:00",
+      "room": "s. 3.27b",
+      "lecturer": "mgr inż. J. Nowak",
+      "subject": "IPUM"
+    },
+    {
+      "group": 2,
+      "date": "2026-03-14",
+      "start_time": "2026-03-14T09:00:00+01:00",
+      "end_time": "2026-03-14T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "dr inż. R. Dębski",
+      "subject": "MS12"
+    },
+    {
+      "group": 2,
+      "date": "2026-03-14",
+      "start_time": "2026-03-14T12:45:00+01:00",
+      "end_time": "2026-03-14T16:00:00+01:00",
+      "room": "s. 3.27e",
+      "lecturer": "dr inż. A. Brodzicki",
+      "subject": "MS14"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-28",
+      "start_time": "2026-03-28T09:00:00+01:00",
+      "end_time": "2026-03-28T12:15:00+01:00",
+      "room": "s. 2.41",
+      "lecturer": "mgr M. Król",
+      "subject": "MS13"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-28",
+      "start_time": "2026-03-28T12:45:00+01:00",
+      "end_time": "2026-03-28T16:00:00+01:00",
+      "room": "s. 3.27d",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "IPUM"
+    },
+    {
+      "group": 1,
+      "date": "2026-03-29",
+      "start_time": "2026-03-29T12:45:00+01:00",
+      "end_time": "2026-03-29T16:00:00+02:00",
+      "room": "s. 3.27e",
+      "lecturer": "mgr M. Król",
+      "subject": "MS13"
+    },
+    {
+      "group": 1,
+      "date": "2026-04-11",
+      "start_time": "2026-04-11T09:00:00+02:00",
+      "end_time": "2026-04-11T12:15:00+02:00",
+      "room": "s. 2.41",
+      "lecturer": "mgr inż. J. Adamczyk",
+      "subject": "IPUM"
+    },
+    {
+      "group": 1,
+      "date": "2026-04-11",
+      "start_time": "2026-04-11T12:45:00+02:00",
+      "end_time": "2026-04-11T16:00:00+02:00",
+      "room": "s. 3.27d",
+      "lecturer": "prof. B. Śnieżyński",
+      "subject": "MSI1"
+    },
+    {
+      "group": 1,
+      "date": "2026-05-10",
+      "start_time": "2026-05-10T12:45:00+02:00",
+      "end_time": "2026-05-10T16:00:00+02:00",
+      "room": "s. 3.27d",
+      "lecturer": "dr inż. R. Dębski",
+      "subject": "PD"
+    }
+  ]
+}
