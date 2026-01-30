@@ -5,10 +5,6 @@
     "total_entries": 64
   },
   "classes": [
-    { "group": 1, "date": "2026-01-30", "start_time": "2026-01-30T10:00:00+01:00", "end_time": "2026-01-30T11:50:00+01:00", "room": "s. 2.41", "lecturer": "prof. TEST2", "subject": "MSI1", "type": "lecture" },
-    { "group": 1, "date": "2026-01-30", "start_time": "2026-01-30T20:00:00+01:00", "end_time": "2026-01-30T20:20:00+01:00", "room": "s. 2.41", "lecturer": "prof. TEST2", "subject": "MSI1", "type": "lecture" },
-    { "group": 1, "date": "2026-01-30", "start_time": "2026-01-30T22:00:00+01:00", "end_time": "2026-01-30T24:00:00+01:00", "room": "s. 2.41", "lecturer": "prof. TEST2", "subject": "MSI1", "type": "lecture" },
-
     { "group": 1, "date": "2026-02-28", "start_time": "2026-02-28T09:00:00+01:00", "end_time": "2026-02-28T12:15:00+01:00", "room": "s. 2.41", "lecturer": "prof. B. Śnieżyński", "subject": "MSI1", "type": "lecture" },
     { "group": 1, "date": "2026-02-28", "start_time": "2026-02-28T12:45:00+01:00", "end_time": "2026-02-28T16:00:00+01:00", "room": "s. 3.27d", "lecturer": "dr inż. R. Dębski", "subject": "MS12", "type": "lab" },
     { "group": 1, "date": "2026-03-01", "start_time": "2026-03-01T09:00:00+01:00", "end_time": "2026-03-01T12:15:00+01:00", "room": "s. 2.41", "lecturer": "mgr inż. J. Adamczyk", "subject": "ID", "type": "lecture" },
