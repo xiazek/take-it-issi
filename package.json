@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/xiazek/take-it-issi/issues"
   },
-  "homepage": "https://github.com/xiazek/take-it-issi#readme",
+  "homepage": "https://xiazek.github.io/take-it-issi",
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.2",
     "autoprefixer": "^10.4.23",

@@ -34,4 +34,19 @@ npm run preview
 
 ## Deployment
 
+This application is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+**Live URL:** https://xiazek.github.io/take-it-issi
+
+The deployment is handled by GitHub Actions using a modern workflow that:
+- Builds the application using Vite
+- Optimizes assets for production
+- Deploys to GitHub Pages automatically
+
+### Manual Deployment
+
+You can also trigger a manual deployment from the Actions tab in the GitHub repository.
+
+### Local Build
+
 Since this is a static site, you can deploy the contents of the `dist` folder to any static hosting service like GitHub Pages, Vercel, or Netlify.
