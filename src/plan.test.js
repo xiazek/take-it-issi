@@ -37,11 +37,9 @@ describe('plan.json validation', () => {
       const sorted = dayClasses.sort((a, b) => a.start_time.localeCompare(b.start_time));
       const first = sorted[0];
       
-      const startTime = format(parseISO(first.start_time), 'HH:mm');
-      const endTime = format(parseISO(first.end_time), 'HH:mm');
-      
-      expect(startTime, `First class on ${first.date} starts at ${startTime} instead of 09:00`).toBe('09:00');
-      expect(endTime, `First class on ${first.date} ends at ${endTime} instead of 12:15`).toBe('12:15');
+      // We check for "T09:00:00" substring to avoid timezone conversion issues with format()
+      expect(first.start_time, `First class on ${first.date} starts at ${first.start_time} instead of 09:00`).toContain('T09:00:00');
+      expect(first.end_time, `First class on ${first.date} ends at ${first.end_time} instead of 12:15`).toContain('T12:15:00');
     });
   });
 
@@ -59,11 +57,8 @@ describe('plan.json validation', () => {
       
       const second = sorted[1];
       
-      const startTime = format(parseISO(second.start_time), 'HH:mm');
-      const endTime = format(parseISO(second.end_time), 'HH:mm');
-      
-      expect(startTime, `Second class on ${second.date} starts at ${startTime} instead of 12:45`).toBe('12:45');
-      expect(endTime, `Second class on ${second.date} ends at ${endTime} instead of 16:00`).toBe('16:00');
+      expect(second.start_time, `Second class on ${second.date} starts at ${second.start_time} instead of 12:45`).toContain('T12:45:00');
+      expect(second.end_time, `Second class on ${second.date} ends at ${second.end_time} instead of 16:00`).toContain('T16:00:00');
     });
   });
 
@@ -177,11 +172,12 @@ describe('plan.json validation', () => {
       const sorted = dayClasses.sort((a, b) => a.start_time.localeCompare(b.start_time));
       const firstClass = sorted[0];
       const secondClass = sorted[1];
-      const date = parseISO(firstClass.date);
-      const dayOfWeek = getDay(date);
+      const dateStr = firstClass.date;
+      
+      const dayOfWeek = getDay(parseISO(dateStr));
 
       if (dayOfWeek === 0) { // Sunday
-        const isUntilMarch13 = isBefore(date, parseISO('2026-03-14'));
+        const isUntilMarch13 = dateStr < '2026-03-14';
         
         if (isUntilMarch13) {
           // Until March 13th
@@ -207,13 +203,12 @@ describe('plan.json validation', () => {
   });
 
   it('all class times should have the correct timezone offset', () => {
-    const springForward = parseISO('2026-03-29');
-    const fallBack = parseISO('2026-10-25');
-
     classes.forEach(c => {
-      const date = parseISO(c.date);
+      // Determine if the date is in summer time in Poland for 2026
+      // March 29, 2026 02:00 -> CEST (+02:00)
+      // October 25, 2026 03:00 -> CET (+01:00)
       
-      const isSummerTime = (isAfter(date, springForward) || format(date, 'yyyy-MM-dd') === '2026-03-29') && isBefore(date, fallBack);
+      const isSummerTime = c.date >= '2026-03-29' && c.date < '2026-10-25';
       const expectedOffset = isSummerTime ? '+02:00' : '+01:00';
 
       expect(c.start_time, `Class on ${c.date} has wrong offset in start_time`).toContain(expectedOffset);

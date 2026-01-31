@@ -2,7 +2,12 @@
 
 ## The test file should be in  `src/plan.test.js`
 
-## Sample cases to check by the test:
+## Sample cases to check by the test
+
+All the times mentioned below in these test cases are in polish time. polish timezone should be also considered (see chapter below about polish timezone details).
+i.e. when I mentione 12:15 it is 12:15 in polish timezone (CET or CEST depending on the date).
+The tests currently are passing on my machine, but are failing on CI, as the timezone is different there. So please ensure that expectations are checked with correct timezone in mind.
+
 - each day with classes has exactly 2 classes
 - classes are only on weekends
 - first class in a day starts at 9:00, finishes at 12:15
