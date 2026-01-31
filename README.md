@@ -1,4 +1,6 @@
-# take-it-issi
+# [take-it-issi](https://xiazek.github.io/take-it-issi) 
+
+Deployed at https://xiazek.github.io/take-it-issi
 
 A responsive university schedule application built with React, Vite, and Tailwind CSS.
 
@@ -10,7 +12,23 @@ To launch the application in development mode with hot-module replacement:
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173` (or the port specified in the terminal).
+The application will be available at `http://localhost:5173` (or the port specified in the terminal). By default, it is configured to be accessible on your local network (e.g., `http://192.168.x.x:5173`).
+
+## Testing
+
+Data validation tests are implemented using [Vitest](https://vitest.dev/). These tests ensure that `plan.json` adheres to the university program rules (e.g., correct timings, room assignments, and weekend-only schedule).
+
+To run the tests once:
+
+```bash
+npm run test
+```
+
+To run tests in watch mode:
+
+```bash
+npx vitest
+```
 
 ## Production Mode
 
@@ -39,6 +57,7 @@ This application is automatically deployed to GitHub Pages when changes are push
 **Live URL:** https://xiazek.github.io/take-it-issi
 
 The deployment is handled by GitHub Actions using a modern workflow that:
+- Runs data validation tests
 - Builds the application using Vite
 - Optimizes assets for production
 - Deploys to GitHub Pages automatically
