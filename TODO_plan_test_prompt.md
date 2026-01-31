@@ -15,6 +15,7 @@ The tests currently are passing on my machine, but are failing on CI, as the tim
 - second class in a day starts at 12:45 and finishes at 16:00
 - all lectures are on saturdays
 - all lectures are in room 2.41
+- all lectures are happening for both groups at the same time. There is no single lecture for just one group.
 - in march and april there are just lectures on Saturday. No single lab on saturday during these months
 - on sundays we have only labs (no single class on sunday is a lecture)
 - since may all classes are just labs - including these on saturday and sunday

@@ -85,6 +85,23 @@ describe('plan.json validation', () => {
     });
   });
 
+  it('all lectures are happening for both groups at the same time', () => {
+    const lectures = classes.filter(c => c.type === 'lecture');
+    const lectureGroups = {};
+
+    lectures.forEach(l => {
+      const key = `${l.date}-${l.start_time}-${l.subject}`;
+      if (!lectureGroups[key]) lectureGroups[key] = [];
+      lectureGroups[key].push(l.group);
+    });
+
+    Object.entries(lectureGroups).forEach(([key, groups]) => {
+      expect(groups.length, `Lecture ${key} should be for 2 groups, but found ${groups.length}`).toBe(2);
+      expect(groups).toContain(1);
+      expect(groups).toContain(2);
+    });
+  });
+
   it('in March and April, Saturday classes should only be lectures', () => {
     classes.forEach(c => {
       const date = parseISO(c.date);
