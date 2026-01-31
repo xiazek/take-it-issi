@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import planData from '../plan.json';
-import { parseISO, getDay, format, getMonth, isBefore } from 'date-fns';
+import { parseISO, getDay, format, getMonth, isBefore, isAfter } from 'date-fns';
 
 describe('plan.json validation', () => {
   const { classes } = planData;
@@ -203,6 +203,21 @@ describe('plan.json validation', () => {
           }
         }
       }
+    });
+  });
+
+  it('all class times should have the correct timezone offset', () => {
+    const springForward = parseISO('2026-03-29');
+    const fallBack = parseISO('2026-10-25');
+
+    classes.forEach(c => {
+      const date = parseISO(c.date);
+      
+      const isSummerTime = (isAfter(date, springForward) || format(date, 'yyyy-MM-dd') === '2026-03-29') && isBefore(date, fallBack);
+      const expectedOffset = isSummerTime ? '+02:00' : '+01:00';
+
+      expect(c.start_time, `Class on ${c.date} has wrong offset in start_time`).toContain(expectedOffset);
+      expect(c.end_time, `Class on ${c.date} has wrong offset in end_time`).toContain(expectedOffset);
     });
   });
 });

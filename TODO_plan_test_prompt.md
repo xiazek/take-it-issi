@@ -1,8 +1,8 @@
 # I need a unit test that will check if plan.json data is correct.
 
-The test file should be in  `src/plan.test.js`
+## The test file should be in  `src/plan.test.js`
 
-Sample cases to check by the test:
+## Sample cases to check by the test:
 - each day with classes has exactly 2 classes
 - classes are only on weekends
 - first class in a day starts at 9:00, finishes at 12:15
@@ -22,6 +22,18 @@ Sample cases to check by the test:
 - on Sundays after March 14th:
   - group 1 labs first class is in room "s. 3.27e" and group 2 in "s. 3.27d"
   - group 1 labs second class is in room "s. 3.27d" and group 2 in "s. 3.27e"
+
+## Ensure correct timezone in the tests is used  
+
+Timezone Offsets:
+ - Winter: UTC+1 (Standard Time)
+ - Summer: UTC+2 (Daylight Saving Time
+
+```csv
+Event,Date,Change,Offset After
+Spring Forward,"March 29, 2026",+1 Hour,UTC+2
+Fall Back,"October 25, 2026",-1 Hour,UTC+1
+```
 
 # the unit tests from src/*.test.js should be part of CI build
 
