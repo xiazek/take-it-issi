@@ -1,7 +1,7 @@
 name: Build and Deploy
 
 on:
-  # Runs on pushes to any branch
+  # Runs on pushes targeting any branch
   push:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -42,6 +42,13 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Verify build
+        run: |
+          if ! grep -q "/take-it-issi/assets/index" dist/index.html; then
+            echo "Error: Build output does not contain the expected base path!"
+            exit 1
+          fi
+
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
