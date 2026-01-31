@@ -49,7 +49,8 @@ const App = () => {
     window.history.replaceState({}, '', url);
 
     // Update manifest and favicon dynamically for group-specific icon
-    const iconPath = `/icon${selectedGroup}.svg`;
+    const base = import.meta.env.BASE_URL;
+    const iconPath = `${base}icon${selectedGroup}.svg`;
     
     // Update favicon
     let favicon = document.querySelector('link[rel="icon"]');
@@ -61,7 +62,7 @@ const App = () => {
     // Update manifest link dynamically
     let manifest = document.querySelector('link[rel="manifest"]');
     if (manifest) {
-      manifest.href = `/manifest${selectedGroup}.json`;
+      manifest.href = `${base}manifest${selectedGroup}.json`;
     }
   }, [selectedGroup]);
 
