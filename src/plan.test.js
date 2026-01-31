@@ -1,10 +1,18 @@
 import { describe, it, expect } from 'vitest';
 import planData from '../plan.json';
+import mappingData from '../subjects_mapping.json';
 import { parseISO, getDay, format, getMonth, isBefore, isAfter } from 'date-fns';
 
 describe('plan.json validation', () => {
   const { classes } = planData;
+  const { subject_mapping } = mappingData;
 
+  it('all subject codes in plan.json should exist in subjects_mapping.json', () => {
+    const validCodes = new Set(subject_mapping.map(s => s.code));
+    classes.forEach(c => {
+      expect(validCodes, `Subject code ${c.subject} in plan.json is not defined in subjects_mapping.json`).toContain(c.subject);
+    });
+  });
   it('each day with classes for a specific group should have exactly 2 classes', () => {
     const days = {};
     classes.forEach(c => {

@@ -6,17 +6,17 @@
       "lecturers": ["prof. B. Śnieżyński", "mgr inż. M. Jarosz"]
     },
     {
-      "code": "MS12",
+      "code": "MSI2",
       "name": "Metody sztucznej inteligencji - heurystyczne algorytmy optymalizacji globalnej, klasyczne ML, sieci neuronowe, prog. probabilistyczne",
       "lecturers": ["dr inż. Roman Dębski"]
     },
     {
-      "code": "MS13",
+      "code": "MSI3",
       "name": "Metody sztucznej inteligencji - NLP/LLMs, modele/metody generatywne",
       "lecturers": ["mgr M. Król"]
     },
     {
-      "code": "MS14",
+      "code": "MSI4",
       "name": "Metody sztucznej inteligencji - wybrane zagadnienia z przetwarzania obrazów",
       "lecturers": ["dr inż. A. Brodzicki"]
     },

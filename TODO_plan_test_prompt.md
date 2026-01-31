@@ -9,6 +9,7 @@ i.e. when I mentione 12:15 it is 12:15 in polish timezone (CET or CEST depending
 The tests currently are passing on my machine, but are failing on CI, as the timezone is different there. So please ensure that expectations are checked with correct timezone in mind.
 
 - each day with classes has exactly 2 classes
+- all subject codes in plan.json should exist in subjects_mapping.json
 - classes are only on weekends
 - first class in a day starts at 9:00, finishes at 12:15
 - second class in a day starts at 12:45 and finishes at 16:00
