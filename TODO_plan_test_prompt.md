@@ -23,3 +23,6 @@ Sample cases to check by the test:
   - group 1 labs first class is in room "s. 3.27e" and group 2 in "s. 3.27d"
   - group 1 labs second class is in room "s. 3.27d" and group 2 in "s. 3.27e"
 
+# the unit tests from src/*.test.js should be part of CI build
+
+Extend the workflow in .github to also run the unit tests files matching src/*.test.js as part of the CI build 
