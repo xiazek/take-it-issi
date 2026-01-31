@@ -1,0 +1,16 @@
+{
+  "name": "Take it ISSI - G2",
+  "short_name": "ISSI G2",
+  "description": "Plan zajęć ISSI - Grupa 2",
+  "start_url": "/take-it-issi/?group=2&utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#A71930",
+  "icons": [
+    {
+      "src": "/take-it-issi/icon2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
