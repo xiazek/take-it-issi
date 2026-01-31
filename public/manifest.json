@@ -2,13 +2,13 @@
   "name": "Take it ISSI",
   "short_name": "ISSI",
   "description": "Plan zajęć ISSI",
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/take-it-issi/?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#A71930",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "/take-it-issi/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
