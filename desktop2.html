@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Zajęć - Grupa 2 - ISSI 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        .group-switch {
+            margin-bottom: 8px;
+        }
+
+        .group-switch a {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 0 4px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+
+        .group-switch a.active {
+            background: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10px;
+        }
+
+        thead th {
+            background: #34495e;
+            color: white;
+            padding: 8px 4px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #2c3e50;
+            font-size: 9px;
+        }
+
+        tbody td {
+            padding: 8px 6px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        .weekend-header {
+            background: #34495e;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 6px;
+        }
+
+        .break-row td {
+            background: #fef5e7;
+            color: #d68910;
+            font-weight: 600;
+            text-align: left;
+            padding: 8px 12px;
+            font-size: 11px;
+        }
+
+        .date-col {
+            width: 90px;
+            background: #ecf0f1;
+            font-weight: 600;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .class-cell {
+            width: 22%;
+            text-align: center;
+        }
+
+        .lecture {
+            background: #e3f2fd;
+        }
+
+        .lab {
+            background: #fff9e6;
+        }
+
+        .empty-cell {
+            background: #fafafa;
+        }
+
+        .subject {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .room {
+            color: #7f8c8d;
+            font-size: 9px;
+            margin-bottom: 1px;
+        }
+
+        .lecturer {
+            color: #555;
+            font-size: 8px;
+            font-style: italic;
+        }
+
+        .date-main {
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .date-day {
+            font-size: 9px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Studia podyplomowe "Inżynieria systemów sztucznej inteligencji"</h1>
+            <p class="subtitle">Plan zajęć - rok akademicki 2026</p>
+            <div class="group-switch">
+                <a href="desktop1.html">Grupa 1</a>
+                <a href="desktop2.html" class="active">Grupa 2</a>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Zjazd / Data</th>
+                    <th>Sobota<br>9:00-12:15</th>
+                    <th>Sobota<br>12:45-16:00</th>
+                    <th>Niedziela<br>9:00-12:15</th>
+                    <th>Niedziela<br>12:45-16:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Zjazd 1 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">28.02 - 01.03</div>
+                        <div class="date-day">Zjazd 1</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI1</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">prof. B. Śnieżyński</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">ID</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">ID</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI2</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni</td>
+                </tr>
+
+                <!-- Zjazd 2 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">14.03 - 15.03</div>
+                        <div class="date-day">Zjazd 2</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI2</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI4</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">dr inż. A. Brodzicki</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">mgr inż. J. Nowak</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI2</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni</td>
+                </tr>
+
+                <!-- Zjazd 3 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">28.03 - 29.03</div>
+                        <div class="date-day">Zjazd 3</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI3</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr M. Król</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI3</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">mgr M. Król</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI2</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni (5-6 kwietnia Święta Wielkanocne)</td>
+                </tr>
+
+                <!-- Zjazd 4 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">11.04 - 12.04</div>
+                        <div class="date-day">Zjazd 4</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI1</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">prof. B. Śnieżyński</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI4</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">dr inż. A. Brodzicki</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni</td>
+                </tr>
+
+                <!-- Zjazd 5 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">25.04 - 26.04</div>
+                        <div class="date-day">Zjazd 5</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">ID</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr inż. J. Adamczyk</div>
+                    </td>
+                    <td class="class-cell lecture">
+                        <div class="subject">MSI3</div>
+                        <div class="room">s. 2.41</div>
+                        <div class="lecturer">mgr M. Król</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">PD</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. J. Nowak</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni (1-3 maja weekend majowy)</td>
+                </tr>
+
+                <!-- Zjazd 6 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">09.05 - 10.05</div>
+                        <div class="date-day">Zjazd 6</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">IPUM</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. J. Nowak</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI4</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. A. Brodzicki</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">PD</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI3</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr M. Król</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 20 dni (24 maja czwartek Zielone Świątki)</td>
+                </tr>
+
+                <!-- Zjazd 7 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">30.05 - 31.05</div>
+                        <div class="date-day">Zjazd 7</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">ID</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. J. Nowak</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI2</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">PD</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI1</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. M. Jarosz</div>
+                    </td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="break-row">
+                    <td colspan="5">⏸ Przerwa: 13 dni (4 czerwca czwartek Boże Ciało)</td>
+                </tr>
+
+                <!-- Zjazd 8 -->
+                <tr>
+                    <td class="date-col">
+                        <div class="date-main">13.06 - 14.06</div>
+                        <div class="date-day">Zjazd 8</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">ID</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. J. Nowak</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI3</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">mgr M. Król</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">PD</div>
+                        <div class="room">s. 3.27d</div>
+                        <div class="lecturer">dr inż. R. Dębski</div>
+                    </td>
+                    <td class="class-cell lab">
+                        <div class="subject">MSI1</div>
+                        <div class="room">s. 3.27e</div>
+                        <div class="lecturer">mgr inż. M. Jarosz</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
